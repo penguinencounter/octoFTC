@@ -23,7 +23,7 @@ def get_forks(pages: int = 1, silent: bool = False):
 
 
 def run(silent: bool = False):
-    forks = get_forks(3, silent=silent)
+    forks = get_forks(22, silent=silent)
     if not silent:
         logging.info(f'collected {len(forks)} forks total')
     with open('forks.json', 'w') as f:
